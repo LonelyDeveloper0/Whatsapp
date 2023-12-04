@@ -1,13 +1,13 @@
 {
     "version": 2,
     "builds": [
-      { "src": "./backend/src/server.js", "use": "@vercel/node" }
+      { "src": "server.js", "use": "@vercel/node" }
     ],
     "routes": [
       { "handle": "filesystem" },
       {
         "src": "/.*",
-        "dest": "./backend/src/server.js"
+        "dest": "server.js"
       }
     ]
   }
